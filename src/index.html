@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator__screenWrap">
+            <input type="text" id="input" class="calculator__screen" readonly value="0">
+        </div>
+        <div class="calculator__key">
+            <div class="wrap-left">
+                <div class="calculator__key__operators">
+                    <button type="button" onclick="clearAll()">AC</button>
+                    <button type="button" onclick="clickOperator(value)" value="*">*</button>
+                    <button type="button" onclick="clickOperator(value)"value="/">/</button>
+                </div>
+                <div class="calculator__key__numbers">
+                    <button type="button" onclick="clickDigit(value)" value="7">7</button>
+                    <button type="button" onclick="clickDigit(value)" value="8">8</button>
+                    <button type="button" onclick="clickDigit(value)" value="9">9</button>
+                    <button type="button" onclick="clickDigit(value)" value="4">4</button>
+                    <button type="button" onclick="clickDigit(value)" value="5">5</button>
+                    <button type="button" onclick="clickDigit(value)" value="6">6</button>
+                    <button type="button" onclick="clickDigit(value)" value="1">1</button>
+                    <button type="button" onclick="clickDigit(value)" value="2">2</button>
+                    <button type="button" onclick="clickDigit(value)" value="3">3</button>
+                    <button type="button" class="bigZero" onclick="clickDigit(value)" value="0">0</button>
+                    <button type="button" onclick="clickOperator(value)" value="=">=</button>
+                </div>
+            </div>
+            <div class="calculator__key__operatorsTwo">
+                <button type="button" class="big-buttons" onclick="clickOperator(value)" value="-">-</button>
+                <button type="button" class="big-buttons" onclick="clickOperator(value)" value="+">+</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
